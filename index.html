@@ -138,6 +138,7 @@
                     init().then(() => {
                         predict();
                         $('#spinner').hide();
+                        goonghap();
                     });
                 } else {
                     removeUpload();
@@ -171,6 +172,7 @@
                     onit().then(() => {
                         predicts();
                         $('#spinner').hide();
+                        show();
                     });
                 } else {
                     removeUploads();
@@ -258,16 +260,8 @@
                 
             }  
                 
-            function total() {
-                var fir = document.getElementById('f-m-f').textContent;
-                var sec = document.getElementById('f-m-m').textContent;
-                
-                if ((typeof fir === 'string') && (typeof sec === 'string')) {
-                    goonghap();
-                } else {
-                    console.log('fail');
-                }
-                 $("#koonghap").show();
+            function show() {
+                    $("#koonghap").show();
             }
             
             function kwansang() {

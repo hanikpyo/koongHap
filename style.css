@@ -1,0 +1,391 @@
+body {
+    font-family: sans-serif;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+}
+#gender {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-family: 'KyoboHand';
+    font-weight: 900;
+}
+.gender-f {
+    float:left;
+    text-align:center;
+    width:40%;
+    margin-left: 2rem;
+}
+.gender-m {
+    float:right;
+     text-align:center;
+width:40%;
+    margin-right: 2rem;
+}
+.file-upload-flex {
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 1rem;
+    grid-template-columns: 4fr 1fr 4fr;
+    border: 0.2rem solid gray;
+    border-radius: 2rem;
+}
+.file-upload-title {
+    display:inline-block;
+    grid-column: 1/4;
+}
+.file-upload {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    height: 100%;
+}
+.file-upload-heart {
+    align-self: center;
+    margin: 0 auto;
+}
+.file-upload-sec {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    height: 100%;
+}
+#flex-desc {
+    text-align:center;
+    grid-column:1/4;
+    font-size:3rem;
+    margin: 0 auto;
+    font-family: 'Bazzi';
+}
+#flex-middle {
+    text-align: center;
+    grid-column: 1/4;
+    align-self: center;
+    margin: 0 auto;
+    font-size:5rem;
+    font-family: 'ImcreSoojin';
+}
+#flex-desckwan {
+    text-align:center;
+    grid-column:1/4;
+    font-size:3rem;
+    margin: 0 auto;
+    font-family: 'KyoboHand';
+}
+.flex-bottom {
+    grid-column: 1/4;
+    align-self: center;
+    margin: 0 auto;
+}
+.file-upload-content-f {
+    display: none;
+    text-align: center;
+}
+.file-upload-content-m {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input-f {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+.file-upload-input-m {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+#face-image-f {
+    border: 0.8rem solid pink;
+    margin-top: 1rem;
+    width: -webkit-fill-available;
+}
+#face-image-m {
+    border: 0.8rem solid skyblue;
+    margin-top: 1rem;
+    width: -webkit-fill-available;
+}
+
+.image-upload-wrap-f {
+    margin: 2rem auto;
+    border: 0.3rem solid hotpink;
+    position: relative;
+    border-radius: 1rem;
+}
+.image-upload-wrap-m {
+    margin: 2rem auto;
+    border: 0.3rem solid turquoise;
+    position: relative;
+    border-radius: 1rem;
+}
+.image-upload-wrap:hover {
+    background-color: sandybrown;
+    border: 0.3rem solid #ffffff;
+}
+
+.image-title-wrap {
+    padding: 0 1rem 1rem 1rem;
+    color: #222;
+}
+
+.drag-text {
+    text-align: center;
+}
+
+.drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #15824b;
+    padding: 5rem 0;
+}
+
+.file-upload-image-f {
+    height: 25rem;
+    margin: auto;
+    padding: 1.2rem;
+}
+.file-upload-image-m {
+    height: 25rem;
+    margin: auto;
+    padding: 1.2rem;
+}
+
+.remove-image {
+    width: 12rem;
+    margin: 0;
+    color: #fff;
+    background: lightskyblue;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'ImcreSoojin';
+}
+
+.remove-image:hover {
+    background: deepskyblue;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.remove-image:active {
+    border: 0;
+    transition: all 0.2s ease;
+}
+#koonghap {
+    width: 12rem;
+    margin: 0;
+    color: #fff;
+    background: lightsalmon;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'ImcreSoojin';
+    display:none;
+}
+#koonghap:hover:enabled {
+   background: salmon;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer; 
+}
+#koonghap:active:enabled {
+    border: 0;
+    transition: all 0.2s ease;
+}
+.try-again {
+    font-size: 1rem;
+}
+.upload {
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+}
+.header {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    border: 0.2rem solid gray;
+    border-radius: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.header-logo {
+    display: inline-block;
+    float: left;
+    margin-top: 1.2rem;
+    margin-left: 3rem;
+}
+.logo-img {
+    height: 6rem;
+    width: auto;
+}
+.header-title {
+    text-align: center;
+    font-size: 7rem;
+    font-family: 'MaplestoryOTFBold';
+    display: inline-block;
+    margin-right: 8rem;
+}
+.description {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'yg-jalnan';
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.subdescr {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'yg-jalnan';
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
+}
+.warning {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'yg-jalnan';
+    margin: 0 auto;
+    width: 40%;
+    margin-bottom: 0.3rem;
+    color: gray;
+}
+
+/*loading-spinner*/
+#spinner {
+        animation: spin 2s linear infinite;
+    font-size:0.5rem;
+    display:none;
+      }
+#spinners {
+        animation: spin 2s linear infinite;
+    font-size:0.5rem;
+    display:none;
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+.text-center {
+    font-family: 'Bazzi';
+}
+/*loading-spinner-end*/
+
+/*font-family*/
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fromdamiM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/fromdamiM.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*font-family-end*/
+
+/*responsive*/
+
+/* Desktop Device */
+@media all and (min-width: 1025px) {
+    html {
+        font-size: 16px;
+    }
+}
+/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width: 480px) and (max-width: 767px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+@media all and (max-width: 479px) {
+    html {
+        font-size: 7px;
+    }
+}
+/*responsive-end*/

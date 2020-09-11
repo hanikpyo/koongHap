@@ -92,6 +92,10 @@ width:40%;
     align-self: center;
     margin: 0 auto;
 }
+.share {
+    grid-column:1/4;
+    margin:0 auto;
+}
 .file-upload-content-f {
     display: none;
     text-align: center;
